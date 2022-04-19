@@ -28,7 +28,7 @@ export function App() {
   return (
     <>
       <Photos />
-      <Ui />
+      {/* <Ui /> */}
       <Todos todos={todos} />
       <button id={'add-todo'} onClick={addTodo}>
         Add Todo
