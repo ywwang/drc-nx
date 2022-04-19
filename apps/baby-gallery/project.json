@@ -1,0 +1,73 @@
+{
+  "root": "apps/baby-gallery",
+  "sourceRoot": "apps/baby-gallery/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "compiler": "babel",
+        "outputPath": "dist/apps/baby-gallery",
+        "index": "apps/baby-gallery/src/index.html",
+        "baseHref": "/",
+        "main": "apps/baby-gallery/src/main.tsx",
+        "polyfills": "apps/baby-gallery/src/polyfills.ts",
+        "tsConfig": "apps/baby-gallery/tsconfig.app.json",
+        "assets": [
+          "apps/baby-gallery/src/favicon.ico",
+          "apps/baby-gallery/src/assets"
+        ],
+        "styles": ["apps/baby-gallery/src/styles.scss"],
+        "scripts": [],
+        "webpackConfig": "@nrwl/react/plugins/webpack"
+      },
+      "configurations": {
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "apps/baby-gallery/src/environments/environment.ts",
+              "with": "apps/baby-gallery/src/environments/environment.prod.ts"
+            }
+          ],
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/web:dev-server",
+      "options": {
+        "buildTarget": "baby-gallery:build",
+        "hmr": true
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "baby-gallery:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/baby-gallery/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/baby-gallery"],
+      "options": {
+        "jestConfig": "apps/baby-gallery/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

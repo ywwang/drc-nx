@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "baby-gallery": "apps/baby-gallery",
+    "baby-gallery-e2e": "apps/baby-gallery-e2e"
+  }
+}
