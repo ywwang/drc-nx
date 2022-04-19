@@ -54,6 +54,19 @@
         }
       }
     },
+    "serveAppAndApi": {
+        "executor": "@nrwl/workspace:run-commands",
+            "options": {
+            "commands": [
+                {
+                    "command": "nx run serve"
+                },
+                {
+                    "command": "nx run api:serve"
+                }
+            ]
+        }
+    },
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
