@@ -44,7 +44,8 @@
       "executor": "@nrwl/web:dev-server",
       "options": {
         "buildTarget": "baby-gallery:build",
-        "hmr": true
+        "hmr": true,
+        "proxyConfig": "apps/baby-gallery/proxy.conf.json"
       },
       "configurations": {
         "production": {

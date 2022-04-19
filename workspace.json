@@ -1,6 +1,7 @@
 {
   "version": 2,
   "projects": {
+    "api": "apps/api",
     "baby-gallery": "apps/baby-gallery",
     "baby-gallery-e2e": "apps/baby-gallery-e2e"
   }
