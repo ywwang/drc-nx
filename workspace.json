@@ -3,6 +3,7 @@
   "projects": {
     "api": "apps/api",
     "baby-gallery": "apps/baby-gallery",
-    "baby-gallery-e2e": "apps/baby-gallery-e2e"
+    "baby-gallery-e2e": "apps/baby-gallery-e2e",
+    "data": "libs/data"
   }
 }
