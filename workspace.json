@@ -4,7 +4,7 @@
     "api": "apps/api",
     "baby-gallery": "apps/baby-gallery",
     "baby-gallery-e2e": "apps/baby-gallery-e2e",
-    "data": "libs/data",
+    "prototype": "libs/prototype",
     "ui": "libs/ui",
     "ui-e2e": "apps/ui-e2e"
   }

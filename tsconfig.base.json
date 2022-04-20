@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@drc-nx/data": ["libs/data/src/index.ts"],
+      "@drc-nx/prototype": ["libs/prototype/src/index.ts"],
       "@drc-nx/ui": ["libs/ui/src/index.ts"]
     }
   },

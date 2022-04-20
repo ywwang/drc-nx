@@ -4,14 +4,16 @@ import styles from './app.module.scss';
 import NxWelcome from './nx-welcome';
 
 import Photos from './photos/photos';
-import { Todo } from '@drc-nx/data';
+import { Todo } from '@drc-nx/prototype';
 import { Ui, Todos } from '@drc-nx/ui';
 
 export function App() {
   const [todos, setTodos] = useState<Todo[]>([]);
 
   useEffect(() => {
-    fetch('/api/todos').then((response) => response.json()).then(setTodos);
+    fetch('/api/todos')
+      .then((response) => response.json())
+      .then(setTodos);
   }, []);
 
   function addTodo() {
@@ -23,7 +25,7 @@ export function App() {
       .then((newTodo) => {
         setTodos([...todos, newTodo]);
       });
-  };
+  }
 
   return (
     <>

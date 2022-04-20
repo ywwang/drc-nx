@@ -1,5 +1,5 @@
 import { Express } from 'express';
-import { Todo } from '@drc-nx/data';
+import { Todo } from '@drc-nx/prototype';
 
 const todos: Todo[] = [{ title: 'Todo 1' }, { title: 'Todo 2' }];
 

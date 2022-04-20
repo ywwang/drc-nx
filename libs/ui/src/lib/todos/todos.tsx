@@ -1,4 +1,4 @@
-import { Todo } from '@drc-nx/data';
+import { Todo } from '@drc-nx/prototype';
 import './todos.module.scss';
 
 export interface TodosProps {

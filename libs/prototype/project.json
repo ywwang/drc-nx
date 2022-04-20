@@ -1,20 +1,20 @@
 {
-  "root": "libs/data",
-  "sourceRoot": "libs/data/src",
+  "root": "libs/prototype",
+  "sourceRoot": "libs/prototype/src",
   "projectType": "library",
   "targets": {
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["libs/data/**/*.ts"]
+        "lintFilePatterns": ["libs/prototype/**/*.ts"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/data"],
+      "outputs": ["coverage/libs/prototype"],
       "options": {
-        "jestConfig": "libs/data/jest.config.js",
+        "jestConfig": "libs/prototype/jest.config.js",
         "passWithNoTests": true
       }
     }
